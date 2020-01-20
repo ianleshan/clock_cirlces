@@ -122,7 +122,7 @@ class _DigitalClockState extends State<DigitalClock>
   void _updateTime() {
     setState(() {
       final h = DateFormat('HH').format(_dateTime);
-      final m = DateFormat('ss').format(_dateTime);
+      final m = DateFormat('mm').format(_dateTime);
       final clock = h + m;
 
       digitDisplay.startAnimation(clock);
